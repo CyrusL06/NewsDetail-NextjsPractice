@@ -1,4 +1,4 @@
-// File: /Users/cyruslorenzo/Desktop/News-Detail-PageNextJS/NewsDetail-NextjsPractice/app/news/page.js
+// File: /Users/cyruslorenzo/Desktop/NewsDetail-NextjsPractice/app/news/page.js
 import * as entry from '../../../../app/news/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
