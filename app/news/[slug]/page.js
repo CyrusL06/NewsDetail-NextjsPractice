@@ -1,9 +1,16 @@
 import { DUMMY_NEWS } from "@/dummy-news";
+import { notFound } from "next/navigation";
 
 export default function NewsDetailPage({params}){
     // holds the key for every id slugs
     const newsSlug = params.slug
+    //dummy news finds newsItem and turns them into slug == newSLug
     const newsItem = DUMMY_NEWS.find((newsItem) => newsItem.slug === newsSlug)
+
+    if(!newsItem){
+        notFound();
+    }
+
 
     return(
         <article className= "news-article">
