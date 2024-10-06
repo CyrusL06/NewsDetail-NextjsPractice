@@ -7,6 +7,8 @@ export default function NewsDetailPage({params}){
     //dummy news finds newsItem and turns them into slug == newSLug
     const newsItem = DUMMY_NEWS.find((newsItem) => newsItem.slug === newsSlug)
 
+    // because nextJS doesnt understand if article exist or not
+    // we only 
     if(!newsItem){
         notFound();
     }
